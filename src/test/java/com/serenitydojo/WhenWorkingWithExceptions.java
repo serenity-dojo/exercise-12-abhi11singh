@@ -50,5 +50,6 @@ public class WhenWorkingWithExceptions {
     public void catchingCustomExceptionsWhenTheFileDoesNotExist() {
         FileLoader fileLoader = new FileLoader();
         assertThat(fileLoader.fileHasText("does-not-exist.txt","Hello World")).isFalse();
+
     }
 }
